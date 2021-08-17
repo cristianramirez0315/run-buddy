@@ -1,6 +1,9 @@
 * {
     margin: 0;
     padding: 0;
+    /*instruct the browser to ignore padding in the overall width*/
+    /* problem we were having was that the footer was longer than the width of the page*/
+    box-sizing: border-box;
 }
 body {
     font-family: Helvetica, Arial, sans-serif;
@@ -28,8 +31,27 @@ header nav {
 header nav ul li {
     display: inline;
 }
-  header nav ul li a {
+header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
     font-size: 22px;
+}
+footer {
+    background-color: #fce138;
+    width: 100%;
+    padding: 40px 35px;
+}
+footer h2{
+    display: inline;
+    color: #024e76;
+    font-size: 30px;
+    margin: 0;
+}
+footer div {
+    float: right;
+    line-height: 1.5;
+    text-align: right;
+}
+footer a {
+    color: #024e76;
 }
